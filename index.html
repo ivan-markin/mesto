@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mesto</title>
+  <link rel="stylesheet" href="style.eaf652fc677a06413c24.css">
+</head>
+<body>
+  <div class="root">
+    <header class="header root__section">
+      <img src="../images/logo.svg" alt="mesto logo" class="logo">
+    </header>
+    <div class="profile root__section">
+      <div class="user-info">
+        <div class="user-info__photo"></div>
+        <div class="user-info__data">
+          <h1 class="user-info__name"></h1>
+          <p class="user-info__job"></p>
+          <button class="user-info__edit-profile">Edit</button>
+        </div>
+        <button class="button user-info__button">+</button>
+      </div>
+    </div>
+    <div class="places-list root__section">
+
+      <!-- Пример вёрстки карточки: -->
+
+      <!--div class="place-card">
+        <div class="place-card__image" style="background-image: url(https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg)">
+          <button class="place-card__delete-icon"></button>
+        </div>
+        <div class="place-card__description">
+          <h3 class="place-card__name">Камчатка</h3>
+          <button class="place-card__like-icon"></button>
+        </div>
+      </!--div-->
+
+      <!-- конец примера. -->
+
+    </div>
+    <div class="popup popup-block">
+      <div class="popup__content">
+        <img src="../images/close.svg" alt="" class="popup-block__close">
+        <h3 class="popup__title">Новое место</h3>
+        <form class="popup__form" name="new" novalidate>
+            <input id="title" type="text" name="title" class="popup__input popup__input_type_name" placeholder="Название" required>
+            <span id="error-title" class="error-message">Ошибка в названии</span>
+            <input id="link" type="text" name="link" class="popup__input popup__input_type_link-url" placeholder="Ссылка на картинку" required>
+            <span id="error-link" class="error-message">Ошибочная ссылка</span>
+            <button type="submit" name="submit" class="button popup__button">+</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="edit-profile popup-block">
+      <div class="edit-profile__content">
+        <img src="../images/close.svg" alt="" class="popup-block__close">
+        <h3 class="edit-profile__title">Редактировать профиль</h3>
+        <form class="edit-profile__form" name="profile" novalidate>
+            <input id="name" type="text" name="name" class="edit-profile__input edit-profile__input_type_name" placeholder="Имя" required minlength="2" maxlength="30">
+            <span id="error-name" class="error-message">Ошибка в имени</span>
+            <input  id="about" type="text" name="about" class="edit-profile__input edit-profile__input_type_link-url" placeholder="О себе" required minlength="2" maxlength="30">
+            <span id="error-about" class="error-message">Ошибка в профессии</span>
+            <button id="submit" type="submit" name="submit" class="button edit-profile__button">Сохранить</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="big-image popup-block">
+      <div class="big-image__container"></div>
+    </div>
+  </div>
+  
+  <!-- <script src="./src/api.js"></script>
+  <script src="./src/user-info.js"></script>
+  <script src="./src/card-list.js"></script>
+  <script src="./src/card.js"></script>
+  <script src="./src/popup.js"></script>
+  <script src="./src/form-validator.js"></script> -->
+  <script type="module" src="main.2a9c57d7c8aad489ccff.js"></script>
+</body>
+</html>
