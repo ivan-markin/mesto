@@ -5,6 +5,6 @@ A training project, a photo gallery site that allows you to add, delete and like
 
 ## Getting Started
 
-This site was built using [GitHub Pages](https://pages.github.com/).
+To start a site, follow the link: [https://ivan-markin.github.io/mesto/](https://ivan-markin.github.io/mesto/).
 
 
