@@ -16,7 +16,7 @@ To start a site, follow the link: [https://ivan-markin.github.io/mesto/](https:/
 
 **Expected in future releases:**
 
-* Displays the number of likes of the card
+* Displaying the number of likes of the card
 * Removing a card from the server
 * User avatar update
 * Improved UX when editing a profile
