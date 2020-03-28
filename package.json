@@ -1,7 +1,7 @@
 {
   "name": "mesto",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.1.0",
+  "description": "A training project, a photo gallery site that allows you to add, delete and like cards with photos of beautiful places in Russia",
   "main": "index.js",
   "scripts": {
     "build": "NODE_ENV=production rimraf dist && webpack --mode production",
@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/ivan-markin/mesto.git"
   },
-  "author": "",
+  "author": "Ivan Markin",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ivan-markin/mesto/issues"
@@ -43,5 +43,11 @@
   "dependencies": {
     "babel-polyfill": "^6.26.0",
     "core-js": "^3.4.1"
-  }
+  },
+  "browserslist": [
+    "defaults",
+    "not IE 11",
+    "not IE_Mob 11",
+    "maintained node versions"
+  ]
 }

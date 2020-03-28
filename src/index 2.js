@@ -34,9 +34,7 @@ const popup = new Popup();
 const userInfo = new UserInfo(userName, userJob);
 const validateAddCardForm = new FormValidator(popupForm);
 const validateEditProfileForm = new FormValidator(editProfileForm);
-
-const serverUrl = process.env.NODE_ENV === 'development' ? 'http://praktikum.tk/cohort8/' : 'https://praktikum.tk/cohort8/';
-const api = new Api('4b70a63a-218c-4b4c-9259-0286cc25ee55', serverUrl);
+const api = new Api('4b70a63a-218c-4b4c-9259-0286cc25ee55', 'https://praktikum.tk/cohort8/');
 
 // Объект для передачи параметров функции открытия попапа
 const popupObj = {
