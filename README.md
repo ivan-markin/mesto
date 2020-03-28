@@ -21,3 +21,4 @@ To start a site, follow the link: [https://ivan-markin.github.io/mesto/](https:/
 * User avatar update.
 * Improved UX when editing a profile.
 * Improved UX when adding cards.
+
