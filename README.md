@@ -1,11 +1,19 @@
 # Mesto.Russia
 
-### v.0.1.0
+### v.0.1.1
 A training project, a photo gallery site that allows you to add, delete and like cards with photos of beautiful places in Russia.
 
 ## Getting Started
 
 To start a site, follow the link: [https://ivan-markin.github.io/mesto/](https://ivan-markin.github.io/mesto/).
+
+## Installation
+
+* Clone this repo to your local machine using `git clone https://ivan-markin.github.io/mesto`
+* Use `npm i` to install NPM
+* Use `npm run dev` to start project locally
+
+## Implemented Functionality
 
 **In the current version, the following functionality is implemented:**
 

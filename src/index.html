@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Mesto</title>
-  <link rel="stylesheet" href="./pages/index.css">
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
 </head>
 <body>
   <div class="root">
     <header class="header root__section">
-      <img src="./images/logo.svg" alt="mesto logo" class="logo">
+      <img src="<%=require('./images/logo.svg').default%>" alt="mesto logo" class="logo">
     </header>
     <div class="profile root__section">
       <div class="user-info">
@@ -33,7 +33,10 @@
         </div>
         <div class="place-card__description">
           <h3 class="place-card__name">Камчатка</h3>
-          <button class="place-card__like-icon"></button>
+          <div class="place-card__like-container">
+            <button class="place-card__like-icon"></button>
+            <p class="place-card__like-counter"></p>
+          </div>    
         </div>
       </!--div-->
 
@@ -42,7 +45,7 @@
     </div>
     <div class="popup popup-block">
       <div class="popup__content">
-        <img src="./images/close.svg" alt="" class="popup-block__close">
+        <img src="<%=require('./images/close.svg').default%>" alt="" class="popup-block__close">
         <h3 class="popup__title">Новое место</h3>
         <form class="popup__form" name="new" novalidate>
             <input id="title" type="text" name="title" class="popup__input popup__input_type_name" placeholder="Название" required>
@@ -56,7 +59,7 @@
 
     <div class="edit-profile popup-block">
       <div class="edit-profile__content">
-        <img src="./images/close.svg" alt="" class="popup-block__close">
+        <img src="<%=require('./images/close.svg').default%>" alt="" class="popup-block__close">
         <h3 class="edit-profile__title">Редактировать профиль</h3>
         <form class="edit-profile__form" name="profile" novalidate>
             <input id="name" type="text" name="name" class="edit-profile__input edit-profile__input_type_name" placeholder="Имя" required minlength="2" maxlength="30">
@@ -73,12 +76,12 @@
     </div>
   </div>
   
-  <script src="./src/api.js"></script>
+  <!-- <script src="./src/api.js"></script>
   <script src="./src/user-info.js"></script>
   <script src="./src/card-list.js"></script>
   <script src="./src/card.js"></script>
   <script src="./src/popup.js"></script>
-  <script src="./src/form-validator.js"></script>
-  <script src="./src/script.js"></script>
+  <script src="./src/form-validator.js"></script> -->
+  <script type="module" src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 </body>
 </html>
