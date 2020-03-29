@@ -7,6 +7,14 @@ A training project, a photo gallery site that allows you to add, delete and like
 
 To start a site, follow the link: [https://ivan-markin.github.io/mesto/](https://ivan-markin.github.io/mesto/).
 
+## Installation
+
+* Clone this repo to your local machine using `git clone https://ivan-markin.github.io/mesto`
+* Use `npm i` to install NPM
+* Use `npm run dev` to start project locally
+
+## Implemented Functionality
+
 **In the current version, the following functionality is implemented:**
 
 * Adding a card to the general list with the name of the place and a link to the photo.
